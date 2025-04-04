@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#hoverLocation {
+    margin-bottom: 10px;
+}
+
+#locationSquare {
+    display: block;
+    font-weight: bold;
+}
+
+#gameMessage {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+#guessCounter {
+    margin-bottom: 20px;
+}
+
+#boardCreation {
+    display: grid;
+    grid-template-columns: repeat(6, 50px);
+    gap: 5px;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    border: 0.1rem solid black;
+    cursor: pointer;
+}
+
+.square:hover {
+    background-color: aqua;
+    border: 0.1rem solid orange;
+}
